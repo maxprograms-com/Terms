@@ -21,7 +21,7 @@ This project is based on the paper *YAKE! Keyword extraction from single documen
 Follow these steps to build the project:
 
 ```bash
-git clone https://github.com/rmraya/Terms.git
+git clone https://github.com/maxprograms-com/Terms.git
 cd Terms
 gradle
 ```
