@@ -108,6 +108,10 @@ tasks.register('dist') {
             from 'LICENSE'
             into 'dist'
         }
+        copy {
+            from 'licenses'
+            into 'dist/licenses'
+        }
     }
 }
 

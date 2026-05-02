@@ -171,3 +171,9 @@ Stop words lists extracted from [https://github.com/Alir3z4/stop-words](https://
 - Ukrainian
 - Vietnamese
 - Persian/Farsi
+
+---
+
+## Legal
+
+License information for all included components is available in the [licenses](./licenses) directory.
