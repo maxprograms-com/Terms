@@ -13,8 +13,8 @@ This project is based on the paper *YAKE! Keyword extraction from single documen
 
 ## Requirements for building
 
-- Java 21 (get it from [https://adoptium.net/](https://adoptium.net/))
-- Gradle 9.2 or newer (get it from [https://gradle.org/install/](https://gradle.org/install/))
+- Java 25 (get it from [https://adoptium.net/](https://adoptium.net/))
+- Gradle 9.5 or newer (get it from [https://gradle.org/install/](https://gradle.org/install/))
 
 ### Building
 
