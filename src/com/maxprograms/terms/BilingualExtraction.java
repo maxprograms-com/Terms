@@ -255,11 +255,12 @@ public class BilingualExtraction {
         // Step 6: Generate co-occurring pairs
         List<TermPair> pairs = generatePairs(sourceTerms, targetTerms, sourceTermSegments, targetTermSegments);
 
-        // Step 7: Apply mutual best match filtering to reduce garbage pairs
-        pairs = filterMutualBestMatch(pairs);
-
-        // Step 8: Apply co-occurrence filters
+        // Step 7: Apply co-occurrence filters before mutual best match so that
+        // low-ratio pairs do not steal the best-match slot from valid candidates
         pairs = filterPairs(pairs, minCoOccurrence, maxPairs, minCoOccurrenceRatio);
+
+        // Step 8: Apply mutual best match filtering to reduce garbage pairs
+        pairs = filterMutualBestMatch(pairs);
 
         // Step 9: Deduplicate pairs (keep best terms based on YAKE score)
         pairs = deduplicatePairs(pairs);

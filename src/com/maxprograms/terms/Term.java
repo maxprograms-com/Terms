@@ -110,11 +110,11 @@ public class Term implements Comparable<Term> {
         different = size / sentences;
     }
 
-    public void calcRelatednes(int maxFrequency) {
+    public void calcRelatedness(int maxFrequency) {
         int rightSum = sum(rightWords);
-        double wr = rightSum != 0 ? rightWords.size() / rightSum : 0;
+        double wr = rightSum != 0 ? (double) rightWords.size() / rightSum : 0;
         int leftSum = sum(leftWords);
-        double wl = leftSum != 0 ? leftWords.size() / leftSum : 0;
+        double wl = leftSum != 0 ? (double) leftWords.size() / leftSum : 0;
         relatedness = 1 + (wr + wl) * normalizedFrequency / maxFrequency;
     }
 

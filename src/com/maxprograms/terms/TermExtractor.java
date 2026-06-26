@@ -289,7 +289,7 @@ public class TermExtractor {
             Term term = terms.get(i);
             term.calcFrequency(meanFrequency, sDeviation);
             term.calcDifferent(sentences.size());
-            term.calcRelatednes(maxFrequency);
+            term.calcRelatedness(maxFrequency);
             term.calcTermScore();
         }
     }
